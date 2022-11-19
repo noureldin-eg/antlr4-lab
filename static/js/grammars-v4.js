@@ -29,7 +29,7 @@ async function selectGrammar() {
             $("#parsertab").addClass("tabs-header-selected");
             $("#lexertab").removeClass("tabs-header-selected");
         });
-        let prefix = "https://raw.githubusercontent.com/antlr/grammars-v4/master/";
+        let prefix = "";
         let trunc = found.parser.substring(prefix.length);
         // remove parser grammar file name, assume that it's
         // the root (which is wrong!).
@@ -79,7 +79,7 @@ async function selectInput() {
         if (option.selected) {
             // Set input.
             let x = option.value;
-            let prefix = "https://raw.githubusercontent.com/antlr/grammars-v4/master/";
+            let prefix = "";
             let trunc = found_grammar.parser.substring(prefix.length);
             // remove parser grammar file name, assume that it's
             // the root (which is wrong!).
