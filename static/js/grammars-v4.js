@@ -1,6 +1,6 @@
 "use strict";
 
-let GRAMMAR_INDEX = "https://raw.githubusercontent.com/antlr/grammars-v4/master/grammars.json"
+let GRAMMAR_INDEX = "grammars/grammars.json"
 
 async function selectGrammar() {
     // Find.
