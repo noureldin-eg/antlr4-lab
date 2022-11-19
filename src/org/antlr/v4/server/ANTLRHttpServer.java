@@ -164,7 +164,7 @@ public class ANTLRHttpServer {
 		Server server = new Server(threadPool);
 
 		ServerConnector http = new ServerConnector(server);
-		http.setPort(80);
+		http.setPort(8080);
 
 		server.addConnector(http);
 
