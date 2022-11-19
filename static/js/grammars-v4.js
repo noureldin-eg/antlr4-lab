@@ -160,6 +160,10 @@ function loadGrammarIndex(response) {
         i++;
     }
     setupInputDropDownForGrammar(grammars[0]);
+    if (grammars.length > 1) {
+        // Jump automatically to the first grammar after Sample
+        $("#selectgrammar").val(grammars[1].name).change();
+    }
 }
 
 async function setupSelectGrammarTable() {
